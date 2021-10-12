@@ -15,4 +15,40 @@ body {
 
 h1, h2 {
     font-family: $titleFont;
+    margin: 0 auto;
+    padding: 26px 0 0 0;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+  }
+
+header {
+    background-image: url("bkgd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-nav {
+    margin: 30px;
+    a {
+        font-family: $bodyFont;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.right-nav {
+    width: 200px;
+    background-color: red;
 }

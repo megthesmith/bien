@@ -12,15 +12,16 @@
 
   <body>
     <header>
-    <h1>
-      <%= link_to root_path do %>
-        <%= image_tag "bien-logo.svg" %>
-      <% end %>
-    </h1>
-    <h2>The best restaurants in the world</h2>
-    <nav>
+    <nav class="left-nav">
       <%= link_to "Add a review", new_review_path %>
     </nav>
+    <div>
+      <%= link_to root_path do %>
+        <%= image_tag "bien-logo-white.svg" %>
+      <% end %>
+    </div>
+    <div class="right-nav">
+    </div>
     </header>
     <%= yield %>
     <footer>
