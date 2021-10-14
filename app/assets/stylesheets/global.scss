@@ -25,18 +25,20 @@ body{
   }
 
 header {
-    background-image: url("bkgd.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $green;
     margin: 0;
-    padding: 20px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+main {
+    margin: 50px;
+}
+
 .left-nav {
-    margin: 30px;
+    margin: 20px;
     a {
         font-family: $bodyFont;
         color: white;
@@ -48,7 +50,9 @@ header {
     }
 }
 
-.right-nav {
-    width: 200px;
-    background-color: red;
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
